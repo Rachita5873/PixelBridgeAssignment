@@ -1,0 +1,698 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Relative", sans-serif;
+    background-color: black;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 60px;
+    background-color: black;
+    color: white;
+    padding-right: 0.5%;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+  
+
+li {
+    font-size: large;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.listItems ul li a {
+    color: #646464; 
+    text-decoration: none; 
+}
+
+
+.listItems ul li a:visited {
+    color: #646464; 
+    text-decoration: none;
+}
+
+.listItems ul li a:active {
+    color: #E9E9E9; 
+    text-decoration: none; 
+}
+.listItems ul li:first-child:hover a,
+.listItems ul li:nth-child(2):hover a {
+    color: #E9E9E9; 
+}
+
+
+li {
+    padding-right: 1rem;
+    color: #646464;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #E9E9E9;
+}
+
+li a:active {
+    color: #646464;
+    text-decoration: none;
+}
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .listItems {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block; 
+    }
+}
+
+
+
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    padding-right: 5%;
+
+}
+
+.buttons:hover{
+    cursor: pointer;
+}
+
+.btns {
+    margin-right: 1rem;
+}
+
+#btn1{
+    background-color: #3eb489; 
+    color: white; 
+    width: 10rem;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+}
+
+#btn2{
+    color: white;
+    width: 20rem;
+    border: 1px solid #4d4d4e;
+    padding: 10px 15px 10px 15px;
+}
+
+#btn2:hover{
+    cursor: pointer;
+}
+
+#btn1:hover{
+    background-color: #207A59;
+    cursor: pointer;
+}
+
+.butt{
+    display: flex;
+    align-items: center;
+    border: 1px solid #4d4d4e;
+    width: 15rem;
+    justify-content: space-around;
+    height: 2.3rem;
+}
+
+
+.body{
+    font-size: 5.2rem;
+    /* line-height: 6.8rem; */
+    font-weight: 600;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    background-color: black;
+    color: white;
+    height: 370px;
+    padding-bottom: 0;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+
+.body p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 30%;
+    color: #CECECE;
+}
+
+#btn4{
+    background-color: #3eb489; 
+    color: white; 
+    width: 7rem;
+    margin-bottom: 20%;
+    padding:12px 5px;
+    font-size: 1rem;
+    width: 144px;
+    border-radius: 6px;
+    border: none;
+}
+#btn4:hover{
+    background-color: #207A59;
+    cursor: pointer;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Change to column layout on smaller screens */
+    }
+}
+
+.card1{
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    width: 30%;
+    height: 130px;
+    background-color: black;
+}
+
+.card1 > div > img {
+    padding-left: 0.9rem;
+    padding-right: 2rem;
+}
+
+.par{
+    color: #CECECE
+}
+
+.remarks{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #4d4d4e;
+    background-color: black;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.rem{
+    width: 30%;
+    height: 130px;
+}
+
+@media (max-width: 768px) {
+    .remarks {
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .rem {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+.twoCards{
+    background-color: black;
+    height: 420px;
+    border-bottom: 1px solid #4d4d4e;
+}
+
+.twoCards h1{
+    color: white;
+    padding-left: 3%;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.firstCard{
+    width: 45%;
+    height: 230px;
+    border: 1px solid #4d4d4e;
+    color: white;
+    padding: 2% 2% 2% 2%;
+}
+
+.secondCard{
+    width: 45%;
+    height: 230px;
+    border: 1px solid #4d4d4e;
+    color: white; 
+    padding: 2% 2% 2% 2%;
+}
+
+.firstCard img{
+    height: 50px;
+    width: 60px;
+    padding-right: 2%;
+    
+}
+
+.secondCard img{
+    height: 50px;
+    width: 60px;
+    padding-right: 2%;
+}
+
+.cont{
+    padding-top: 2rem;
+}
+
+.btn5 {
+    background-color: #3eb489; 
+    color: white;
+    width: 3rem;
+    height: 2rem; 
+    border-radius: 10%;
+    border: none;
+    margin-right: 2%;
+}
+
+.btn5:hover{
+    background-color: #207A59;
+    cursor: pointer;
+}
+
+.btn-6{
+    background-color: black;
+    color: white;
+    height: 2rem;
+    width: 6rem;
+    border: 0.5px solid white;
+
+}
+
+.btn-6:hover{
+    background-color: #252629;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: black;
+    height:210px
+}
+
+.footerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.footerLogo img{
+    width: 5rem;
+    padding: 0;
+}
+
+.footerLogo p{
+    color: white;
+    font-size: 2rem;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.im{
+margin-right: 70px;
+}
+
+
+.logos img:hover{
+    cursor: pointer;
+}
+
+.TnC{
+display: flex;
+align-items: center;
+color: white;
+justify-content: center;
+margin-top: 40px;
+
+}
+
+.TnC p{
+    padding-right: 20px;
+    color: #646464;
+}
+
+.TnC p:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.stats{
+    height: 400px;
+    padding-top: 4rem;
+    padding-left: 5rem;
+}
+
+.statsHead{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.earnHead{
+    display: flex;
+    align-items: center;
+    color: white; 
+}
+
+.earn{
+    height: 950px;
+    padding-top: 4rem;
+    padding-left: 5rem; 
+}
+
+.earn1{
+    height: 400px;
+    padding-top: 4rem;
+    padding-left: 5rem; 
+}
+
+.statsHead h1{
+padding-right: 0.6rem;
+} 
+
+.statsPara{
+    color: white;
+    padding-top: 1rem;
+}
+
+.earnPara p{
+    color: #9C9C9C;
+}
+
+.earnPara {
+   margin-top: 1rem;
+}
+
+.statsPara p{
+    color: #9C9C9C;
+}
+
+.tableStats{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.statsCard{
+    border: 1px solid #4d4d4e;
+    width: 44%;
+    height: 13rem;
+}
+
+
+#ts2{
+    margin-right: 10%;
+}
+
+.statsCard h4 {
+    color: white;
+    border-bottom: 1px solid #4d4d4e;
+    padding: 1rem 0 1.5rem 0.5rem;
+    font-weight: 400;
+}
+
+.details{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.details p {
+    font-size: small;
+}
+
+.white{
+    color: #9C9C9C;
+}
+
+.gray{
+    color: white;
+}
+
+.stats2{
+    height: 700px;
+    padding-top: 4rem;
+    padding-left: 5rem; 
+}
+
+.cardsCon{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.onee{
+    border: 1px solid #4d4d4e;
+    width: 44%;
+    height: 14rem;
+}
+
+#two{
+    margin-right: 10%;
+}
+
+.onee div {
+    display: flex;
+    align-items: center;
+   
+}
+
+.table{
+    border: 1px solid #4d4d4e;
+    width: 90%;
+    height: 18rem;
+    margin-top: 3%;
+}
+
+.table > p {
+    color: white;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #4d4d4e;
+}
+
+.headings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+
+.headings p{
+    color: #9C9C9C;
+    padding-left: 6rem;
+}
+
+.detail1, .detail2, .detail3, .detail4{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.earnColumn {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border-bottom: 1px solid #4d4d4e;
+}
+
+.col {
+    border: 1px solid #4d4d4e;
+    width: 44%;
+    height: 27rem;
+    margin-right: 10px;
+}
+
+.coll{
+    border: 1px solid #4d4d4e;
+    width: 44%;
+    height: 23rem;
+    margin-right: 10px; 
+}
+.colll{
+    border: 1px solid #4d4d4e;
+    width: 44%;
+    height: 16rem;
+    margin-right: 10px; 
+}
+
+.row1{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 8px 8px 8px 8px;
+    
+}
+
+.para1 {
+    color: #9C9C9C;
+}
+
+.para2 {
+    color: white;
+}
+
+.buyBtn{
+    color: white;
+    background-color: #3eb489; 
+    width: 6rem;
+    height: 2rem; 
+    border-radius: 6%;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.buyBtn:hover{
+    background-color: #207A59;
+    cursor: pointer;
+}
+
+.buyBtnn{
+    color: white;
+    background-color: #3eb489; 
+    width: 7rem;
+    height: 2rem; 
+    border-radius: 6%;
+    border: none;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.buyBtnn:hover{
+    background-color: #207A59;
+    cursor: pointer;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+    overflow: hidden;
+    backdrop-filter: blur(5px); 
+}
+
+.modal-content {
+    background-color: #151515;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20%;
+    height: 40%;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: gray;
+}
+
+.mod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid #888;
+    margin-top: 13px;
+    padding: 13px 13px 13px 13px;
+}
+
+.mod img{
+    width: 10%;
+    height: 10%;
+}
+
+
+
+
+
+
+
+
